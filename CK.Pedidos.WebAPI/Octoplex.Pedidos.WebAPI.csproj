@@ -1,0 +1,41 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+		<NoWarn>$(NoWarn);1591</NoWarn>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Compile Remove="Features\Pedidos\PedidoViewModel.cs" />
+		<Compile Remove="WeatherForecast.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="MediatR" Version="10.0.1" />
+		<PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="10.0.1" />
+		<PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.5" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.5">
+		  <PrivateAssets>all</PrivateAssets>
+		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="6.0.5" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.5" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.5">
+		  <PrivateAssets>all</PrivateAssets>
+		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\CK.Kernel\Octoplex.Kernel.csproj" />
+		<ProjectReference Include="..\CK.Pedidos.Domain\Octoplex.Pedidos.Domain.csproj" />
+		<ProjectReference Include="..\CK.Pedidos.Infra.Data\Octoplex.Pedidos.Infra.Data.csproj" />
+		<ProjectReference Include="..\CK.Pedidos.Web.Application\Octoplex.Pedidos.Web.Application.csproj" />
+		<ProjectReference Include="..\CK.Produtos.Domain\Octoplex.Produtos.Domain.csproj" />
+		<ProjectReference Include="..\CK.Produtos.Infra.Data\Octoplex.Produtos.Infra.Data.csproj" />
+	</ItemGroup>
+
+</Project>
