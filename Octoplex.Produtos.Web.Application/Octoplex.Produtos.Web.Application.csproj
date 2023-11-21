@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Features\Produtos\Validator\**" />
+    <EmbeddedResource Remove="Features\Produtos\Validator\**" />
+    <None Remove="Features\Produtos\Validator\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="11.2.1" />
+    <PackageReference Include="MediatR" Version="10.0.1" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="10.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Octoplex.Kernel\Octoplex.Kernel.csproj" />
+    <ProjectReference Include="..\Octoplex.Produtos.Domain\Octoplex.Produtos.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

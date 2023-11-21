@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
@@ -24,8 +24,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CK.Empresas.Domain\Octoplex.Empresas.Domain.csproj" />
-    <ProjectReference Include="..\CK.Produtos.Domain\Octoplex.Produtos.Domain.csproj" />
+    <ProjectReference Include="..\Octoplex.Empresas.Domain\Octoplex.Empresas.Domain.csproj" />
+    <ProjectReference Include="..\Octoplex.Produtos.Domain\Octoplex.Produtos.Domain.csproj" />
   </ItemGroup>
 
 </Project>

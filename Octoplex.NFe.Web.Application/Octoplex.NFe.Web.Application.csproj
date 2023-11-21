@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="10.0.1" />
+    <PackageReference Include="System.Security.Cryptography.Xml" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Octoplex.Kernel\Octoplex.Kernel.csproj" />
+    <ProjectReference Include="..\Octoplex.NFe.Domain\Octoplex.NFe.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

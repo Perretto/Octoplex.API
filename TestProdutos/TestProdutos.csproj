@@ -22,8 +22,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CK.Produtos.Infra.Data\Octoplex.Produtos.Infra.Data.csproj" />
-    <ProjectReference Include="..\CK.Produtos.Web.Application\Octoplex.Produtos.Web.Application.csproj" />
+    <ProjectReference Include="..\Octoplex.Produtos.Infra.Data\Octoplex.Produtos.Infra.Data.csproj" />
+    <ProjectReference Include="..\Octoplex.Produtos.Web.Application\Octoplex.Produtos.Web.Application.csproj" />
   </ItemGroup>
 
 </Project>
